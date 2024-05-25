@@ -1,7 +1,7 @@
 {
     "charts": {},
     "test": {},
-    "incubator": {
+    "stable": {
         "emby": {
             "app_readme": "<p>CHANGED!!!! Emby Server is a home media server</p>\n<p></p>",
             "categories": [
