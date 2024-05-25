@@ -1,0 +1,22 @@
+image:
+  repository: 10.0.0.51:5000/emby
+  pullPolicy: Always
+  tag: beta
+
+securityContext:
+  readOnlyRootFilesystem: false
+
+service:
+  main:
+    ports:
+      main:
+        port: 10079
+        targetPort: 8096
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+
+portal:
+  enabled: true
