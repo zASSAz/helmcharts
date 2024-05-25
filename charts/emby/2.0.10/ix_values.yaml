@@ -1,0 +1,30 @@
+image:
+  pullPolicy: Always
+  repository: 10.0.0.51:5000/emby
+  tag: beta
+
+resources:
+  limits:
+    cpu: 4000m
+    memory: 8Gi
+
+embyConfig:
+  additionalEnvs: []
+
+# On migration the default is 2
+embyID:
+  user: 568
+  group: 568
+
+embyNetwork:
+  webPort: 9096
+  hostNetwork: false
+
+embyStorage:
+  config:
+    type: ixVolume
+    ixVolumeConfig:
+      datasetName: config
+  additionalStorages: []
+
+embyGPU: {}
