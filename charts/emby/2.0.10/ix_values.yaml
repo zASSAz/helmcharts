@@ -1,6 +1,6 @@
 image:
   pullPolicy: Always
-  repository: 10.0.0.51:5000/emby
+  repository: test.esthost.net/emby
   tag: beta
 
 resources:
